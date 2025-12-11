@@ -1,2 +1,0 @@
-# manuelp-12.github.io
-
