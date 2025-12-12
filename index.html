@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<div class="city-background">
+        <div class="stars" id="stars"></div>
+        <div class="moon"></div>
+        <div class="clouds" id="clouds"></div>
+        <div class="city-skyline" id="cityscape"></div>
+    </div><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -394,7 +399,7 @@
 
         .skill-category h3 {
             margin-bottom: 1rem;
-            color: #a8edea;
+            color: #ffeb3b;
         }
 
         .skill-list {
@@ -426,7 +431,7 @@
             border-radius: 20px;
             padding: 2rem;
             margin-bottom: 2rem;
-            border-left: 4px solid #a8edea;
+            border-left: 4px solid #ffeb3b;
             transition: all 0.3s;
         }
 
@@ -436,12 +441,12 @@
         }
 
         .timeline-item h3 {
-            color: #a8edea;
+            color: #ffeb3b;
             margin-bottom: 0.5rem;
         }
 
         .timeline-item .date {
-            color: #a8edea;
+            color: #ffeb3b;
             font-size: 0.9rem;
             margin-bottom: 1rem;
         }
@@ -494,12 +499,16 @@
             }
 
             .nav-links {
-                gap: 1rem;
-                font-size: 0.9rem;
+                gap: 0.5rem;
+                font-size: 0.85rem;
             }
 
             .section {
                 padding: 3rem 1rem;
+            }
+
+            .resume-embed {
+                height: 500px;
             }
         }
 
@@ -516,17 +525,61 @@
             40% { transform: translateX(-50%) translateY(-20px); }
             60% { transform: translateX(-50%) translateY(-10px); }
         }
+
+        .resume-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 3rem;
+        }
+
+        .resume-embed {
+            width: 100%;
+            height: 800px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            background: white;
+        }
+
+        .resume-download {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .download-btn {
+            background: #ffeb3b;
+            color: #0a0e27;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 235, 59, 0.5);
+        }
     </style>
 </head>
 <body>
+    <div class="city-background">
+        <div class="stars" id="stars"></div>
+        <div class="moon"></div>
+        <div class="clouds" id="clouds"></div>
+        <div class="city-skyline" id="cityscape"></div>
+    </div>
+
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">MP</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#more-projects">More Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -594,6 +647,74 @@
                     <span class="tag">CSS</span>
                     <span class="tag">PHP</span>
                     <span class="tag">Responsive Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="more-projects" class="section">
+        <h2 class="section-title">More Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>🎮 Game Development Projects</h3>
+                <p>Exploring game mechanics and interactive experiences through various game development projects and prototypes.</p>
+                <div class="project-tags">
+                    <span class="tag">Game Dev</span>
+                    <span class="tag">Interactive</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>🤖 Algorithm Challenges</h3>
+                <p>Solving complex algorithmic problems and participating in competitive programming challenges to sharpen problem-solving skills.</p>
+                <div class="project-tags">
+                    <span class="tag">Algorithms</span>
+                    <span class="tag">Data Structures</span>
+                    <span class="tag">Problem Solving</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>🌐 Open Source Contributions</h3>
+                <p>Contributing to open source projects and collaborating with the developer community on GitHub.</p>
+                <div class="project-tags">
+                    <span class="tag">Open Source</span>
+                    <span class="tag">Collaboration</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Manuelp-12" class="project-link">View on GitHub →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>📊 Data Science Projects</h3>
+                <p>Analyzing datasets and building predictive models to extract insights from complex data.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Data Analysis</span>
+                    <span class="tag">ML Models</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>🏆 Hackathon Projects</h3>
+                <p>Building innovative solutions under time constraints at various hackathons, collaborating with teams to create impactful projects.</p>
+                <div class="project-tags">
+                    <span class="tag">Hackathons</span>
+                    <span class="tag">Team Collaboration</span>
+                    <span class="tag">Rapid Development</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://devpost.com/manuelvinpaul" class="project-link">View on Devpost →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>💡 Personal Experiments</h3>
+                <p>Exploring new technologies and frameworks through personal coding experiments and learning projects.</p>
+                <div class="project-tags">
+                    <span class="tag">Learning</span>
+                    <span class="tag">Experimentation</span>
                 </div>
             </div>
         </div>
@@ -681,6 +802,18 @@
         </div>
     </section>
 
+    <section id="resume" class="section">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-section">
+            <div class="resume-embed">
+                <iframe src="resume.pdf" width="100%" height="100%" style="border: none;"></iframe>
+            </div>
+            <div class="resume-download">
+                <a href="resume.pdf" download class="download-btn">📥 Download Resume (PDF)</a>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="section">
         <div class="contact-section">
             <h2 class="section-title">Let's Connect</h2>
@@ -700,9 +833,6 @@
                 <a href="https://devpost.com/manuelvinpaul" target="_blank" class="contact-link">
                     🏆 Devpost
                 </a>
-                <a href="tel:609-332-9074" class="contact-link">
-                    📱 Call Me
-                </a>
             </div>
         </div>
     </section>
@@ -712,6 +842,74 @@
     </footer>
 
     <script>
+        // Generate city skyline
+        const cityscape = document.getElementById('cityscape');
+        const buildings = [
+            { width: 80, height: 250, windows: 40 },
+            { width: 100, height: 320, windows: 50 },
+            { width: 70, height: 200, windows: 30 },
+            { width: 120, height: 380, windows: 60 },
+            { width: 90, height: 280, windows: 45 },
+            { width: 110, height: 350, windows: 55 },
+            { width: 75, height: 220, windows: 35 },
+            { width: 95, height: 300, windows: 48 },
+            { width: 85, height: 260, windows: 42 },
+            { width: 105, height: 340, windows: 52 }
+        ];
+
+        buildings.forEach((bldg, i) => {
+            const building = document.createElement('div');
+            building.className = 'building';
+            building.style.width = bldg.width + 'px';
+            building.style.height = bldg.height + 'px';
+            
+            // Add windows
+            const cols = Math.floor(bldg.width / 15);
+            const rows = Math.floor(bldg.height / 20);
+            
+            for (let row = 0; row < rows; row++) {
+                for (let col = 0; col < cols; col++) {
+                    const window = document.createElement('div');
+                    window.className = 'window';
+                    window.style.width = '8px';
+                    window.style.height = '10px';
+                    window.style.left = (col * 15 + 5) + 'px';
+                    window.style.top = (row * 20 + 5) + 'px';
+                    window.style.animationDelay = Math.random() * 5 + 's';
+                    building.appendChild(window);
+                }
+            }
+            
+            cityscape.appendChild(building);
+        });
+
+        // Generate stars
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.width = Math.random() * 3 + 'px';
+            star.style.height = star.style.width;
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 70 + '%';
+            star.style.animationDelay = Math.random() * 3 + 's';
+            starsContainer.appendChild(star);
+        }
+
+        // Generate clouds
+        const cloudsContainer = document.getElementById('clouds');
+        for (let i = 0; i < 5; i++) {
+            const cloud = document.createElement('div');
+            cloud.className = 'cloud';
+            cloud.style.width = Math.random() * 100 + 100 + 'px';
+            cloud.style.height = '40px';
+            cloud.style.left = Math.random() * 100 + '%';
+            cloud.style.top = Math.random() * 40 + 10 + '%';
+            cloud.style.animationDuration = (Math.random() * 40 + 40) + 's';
+            cloud.style.animationDelay = Math.random() * 20 + 's';
+            cloudsContainer.appendChild(cloud);
+        }
+
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -753,6 +951,35 @@
             el.style.transform = 'translateY(20px)';
             el.style.transition = 'all 0.6s ease-out';
             observer.observe(el);
+        });
+
+        // Interactive building lights on hover
+        document.querySelectorAll('.building').forEach(building => {
+            building.addEventListener('mouseenter', () => {
+                building.querySelectorAll('.window').forEach(window => {
+                    window.style.background = '#00ff88';
+                    window.style.boxShadow = '0 0 15px rgba(0, 255, 136, 0.8)';
+                });
+            });
+            
+            building.addEventListener('mouseleave', () => {
+                building.querySelectorAll('.window').forEach(window => {
+                    window.style.background = '#ffeb3b';
+                    window.style.boxShadow = '0 0 10px rgba(255, 235, 59, 0.5)';
+                });
+            });
+        });
+
+        // Parallax effect for city
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const cityscape = document.getElementById('cityscape');
+            const clouds = document.getElementById('clouds');
+            const stars = document.getElementById('stars');
+            
+            cityscape.style.transform = `translateY(${scrolled * 0.2}px)`;
+            clouds.style.transform = `translateY(${scrolled * 0.1}px)`;
+            stars.style.transform = `translateY(${scrolled * 0.05}px)`;
         });
     </script>
 </body>
